@@ -23,4 +23,12 @@ public class GropbySizeDesc {
             .sorted(Comparator.comparingInt(User::getAge)) //排序是为了方便后面验证结果
             .collect(Collectors.toList()); //从Stream变回list
 
+    public static void main(String[] args) {
+        List<User> users = Arrays.asList(new User(20), new User(35), new User(20));
+        List<Integer> collect = users.stream().map(s -> s.getAge()).collect(Collectors.toList());
+        collect.stream().forEach(System.out::println);
+
+        users.stream().map(s -> s.getAge() > 20).forEach(System.out::println);
+    }
+
 }

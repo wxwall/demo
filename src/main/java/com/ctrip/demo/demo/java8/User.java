@@ -9,10 +9,13 @@ public class User {
     private int age;
     private int count;
 
-    public User(int size, Integer key) {
+    public User(int age, Integer count) {
+        this.age = age;
+        this.count = count;
     }
 
-    public User(int size) {
+    public User(int age) {
+        this.age = age;
     }
 
     public int getAge() {
