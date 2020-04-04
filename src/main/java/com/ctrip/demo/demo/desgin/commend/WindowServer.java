@@ -9,5 +9,6 @@ public class WindowServer implements Command {
     public void execute(AbstractCommandContenxt contenxt) {
         System.out.println("windows server execute command");
         contenxt.startServer();
+        contenxt.closeServer();
     }
 }

@@ -7,6 +7,6 @@ import java.lang.annotation.*;
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER})
-@interface MyAnnotation {
+public @interface MyAnnotation {
     
 }

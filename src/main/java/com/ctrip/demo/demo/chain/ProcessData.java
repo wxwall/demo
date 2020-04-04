@@ -10,7 +10,7 @@ import org.apache.commons.chain.Context;
 public class ProcessData implements Command {
     @Override
     public boolean execute(Context context) throws Exception {
-        System.out.println("process data");
+        System.out.println(context + "  " + context.get("aa"));
         return false;
     }
 }

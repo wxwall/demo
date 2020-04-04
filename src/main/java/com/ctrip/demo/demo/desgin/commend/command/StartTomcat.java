@@ -12,4 +12,9 @@ public class StartTomcat extends AbstractCommandContenxt {
     public void startServer() {
         System.out.println("start tomcat ....");
     }
+
+    @Override
+    public void closeServer() {
+        System.out.println("stop tomcat ...");
+    }
 }

@@ -7,4 +7,6 @@ package com.ctrip.demo.demo.desgin.commend;
 public abstract class AbstractCommandContenxt {
 
     public abstract void startServer();
+
+    public abstract void closeServer();
 }

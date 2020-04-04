@@ -11,4 +11,9 @@ public class StartNgx extends AbstractCommandContenxt {
     public void startServer() {
         System.out.println("start ngx ...");
     }
+
+    @Override
+    public void closeServer() {
+        System.out.println("stop ngx ...");
+    }
 }
